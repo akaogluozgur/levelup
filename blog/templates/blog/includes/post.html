@@ -3,10 +3,14 @@
 <li>
     <article class="post">
         <a href="{% url 'post-detail' post.slug %}">
-            <img src="{% static "blog/images/"|add:post.image %}" alt="{{post.title}}">
+            <img src="{% static "blog/images/"|add:post.game.image %}" alt="{{post.title}}">
             <div class="post__content">
                 <h3>{{post.title}}</h3>
-                <p>{{post.excerpt}}</p>            
+                {% if  post.rating %}
+                    <h5><b>Rating: {{post.rating}}/10.0</b></h5>
+                {% endif %}  
+                <p>{{post.excerpt|truncatechars:180|add:"..."}}</p>    
+                      
             </div>
         </a>
     </article>

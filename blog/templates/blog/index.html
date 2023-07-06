@@ -14,13 +14,12 @@
 <section id="welcome">
     <header>
         <img src="{% static 'blog/images/profile.jpg' %}" alt="LevelUp">
-        <h2>Level Up - Gaming Blog</h2>
+        <h2>Welcome to LevelUp: Ultimate Destination for PC Game Reviews and Guides!</h2>
     </header>
-    <p>Hi! I am Özgür, I love to play PC games. Here you can find my reviews regarding the games.</p>
 </section>
 
 <section id="latest-posts">
-    <h2>My Latest Reviews</h2>
+    <h2>Recent Posts</h2>
     <ul>
         {% for post in posts  %}
             {% include "blog/includes/post.html" %}
@@ -29,9 +28,10 @@
 </section>
 
 <section id="about">
-    <h2>What I do?</h2>
-    <p>Content about me</p>
-    <p>More content</p>
+    <h2><b></b>About<b></h2>
+    <p><b>Name: Özgür Akaoğlu<b></p>
+    <p><b>Mail: <a href="mailto:akaogluozgur@gmail.com">akaogluozgur@gmail.com</a><b></p>
+    <p><a href="https://www.linkedin.com/in/%C3%B6zg%C3%BCr-akao%C4%9Flu/"><b>Linkedn<b></a></p>
 </section>
 {% endblock content %}
 
