@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,100&family=Karla:wght@300;400&family=Ysabeau+SC:wght@200;500&display=swap');
 
 p {
-    font-family: 'Bitter', serif;
+    
 }
 
 .post {
@@ -9,6 +9,7 @@ p {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 2rem;
   }
   
 .post a {
@@ -26,10 +27,9 @@ color: white;
 }
 
 .post img {
-width: 5rem;
-height: 5rem;
+width: 16rem;
+height: 9rem;
 object-fit: cover;
-border-radius: 50%;
 }
 
 .post h3 {
@@ -40,10 +40,11 @@ margin: 0.25rem 0;
 color: #666666;
 margin: 0.25rem;
 font-style: italic;
-font-size: 0.85rem;
+font-size: 0.3rem;
 }
 
 .post:hover time,
 .post:active time {
 color: white;
 }
+
